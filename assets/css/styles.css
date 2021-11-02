@@ -1,7 +1,56 @@
 /*================================== PARTIAL FILES  ==================================*/
 /*================================== FONTS  ==================================*/
-/*================================== VARIABLES ===============================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap");
+:root {
+  /*================================== VARIABLES ===============================*/
+  --body-font-family: 'Poppins', sans-serif;
+  --primary-color: #ee1f70;
+  --primary-light-color: #f72273;
+  --secondary-color: #262f56;
+  --secondary-light-color: #2c3663;
+  --default-text-color: #252525;
+  --gray-tex-color: #596366;
+  /*========================= FONT SIZE AND TYPOGRAPHY ==========================*/
+  --fs-normal: 16px;
+  --fs-small: 14px;
+  --fs-xsmall: 12px;
+  /*================================ FONT WEIGHT ================================*/
+  --fw-xlight: 200;
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
+
 /*================================== DEFAULT STYLES  ==================================*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font-family);
+  font-weight: var(--fw-light);
+  font-size: var(--fs-normal);
+  color: var(--default-text-color);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 /*================================== LAYOUT  ==================================*/
 /*================================== PRELOADER ==================================*/
 /*================================== ANIMATIONS  ==================================*/
