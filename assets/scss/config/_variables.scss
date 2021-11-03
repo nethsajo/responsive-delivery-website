@@ -3,16 +3,20 @@
 
 :root {
   /*================================== VARIABLES ===============================*/
+  --header-height: 80px;
   --body-font-family: 'Poppins', sans-serif;
   --primary-color: #ee1f70;
   --primary-light-color: #f72273;
   --secondary-color: #262f56;
   --secondary-light-color: #2c3663;
   --default-text-color: #252525;
-  --gray-tex-color: #596366;
+  --gray-text-color: #596366;
+  --white-text-color: #ffffff;
+
+  --transition: all 300ms ease-in-out;
 
   /*========================= FONT SIZE AND TYPOGRAPHY ==========================*/
-
+  --fs-logo: 24px;
   --fs-normal: 16px;
   --fs-small: 14px;
   --fs-xsmall: 12px;

@@ -1,1 +1,10 @@
 /*================================== LAYOUT  ==================================*/
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
