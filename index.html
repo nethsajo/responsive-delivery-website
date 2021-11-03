@@ -8,6 +8,7 @@
     <title>EasyDelivery</title>
   </head>
   <body>
+    <!-- Header Container -->
     <header class="header">
       <div class="header__wrapper container">
         <div class="header__logo">
@@ -16,8 +17,8 @@
         <nav class="nav">
           <ul class="nav__menu" id="menu">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -27,8 +28,38 @@
         </div>
       </div>
     </header>
-    <main class="container">
-      <section class="hero grid"></section>
+
+    <!-- Main Container -->
+    <main class="main-container">
+      <!-- Hero Section -->
+      <section class="hero grid container">
+        <div class="hero__text-container">
+          <h1>
+            Your favourite restaurants and takeaways, delivered to your door.
+          </h1>
+          <p>
+            Food, drinks, groceries, and more available for delivery and pickup.
+          </p>
+          <form class="form-address">
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Enter street address or zip code"
+            />
+            <button class="btn btn__s-bordered">Find Food</button>
+          </form>
+        </div>
+        <div class="hero__image-container">
+          <img src="./assets/images/hero-cover.svg" alt="Cover" />
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services grid container">
+        <div class="services-item"></div>
+        <div class="services__order">01</div>
+      </section>
     </main>
     <footer></footer>
   </body>

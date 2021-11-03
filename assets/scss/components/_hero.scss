@@ -1,0 +1,62 @@
+/*================================== HERO STYLES  ==================================*/
+.hero {
+  height: calc(100vh - var(--header-height));
+  grid-template-columns: 1.3fr 1.2fr;
+  justify-content: center;
+  align-items: center;
+
+  &__text-container {
+    text-align: center;
+
+    h1 {
+      font-weight: var(--fw-bold);
+      font-size: var(--fs-hero);
+      color: var(--secondary-color);
+      line-height: 1.2;
+      margin-top: 0;
+      letter-spacing: -0.7px;
+    }
+
+    p {
+      font-weight: var(--fw-normal);
+      font-size: var(--fs-normal);
+      letter-spacing: -0.23px;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-bottom: 3px;
+        background-color: var(--primary-light-color);
+      }
+    }
+
+    .form-address {
+      margin-top: 55px;
+
+      input {
+        width: 65%;
+        font-size: var(--fs-small);
+        padding: 10px 12px;
+        background: none;
+        border: 1.78px solid #8f8fa0;
+        border-radius: 3px;
+      }
+    }
+  }
+
+  &__image-container {
+    display: block;
+    margin: 0 20px;
+
+    img {
+      max-width: 996px;
+      max-height: 511px;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

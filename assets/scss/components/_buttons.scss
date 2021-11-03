@@ -5,11 +5,37 @@
   font-size: var(--fs-small);
   font-weight: var(--fw-medium);
   border-radius: 12px;
-  padding: 10px 25px;
+  padding: 8px 25px;
   line-height: 20px;
 
-  &__bordered {
+  &__p-bordered {
     background: none;
+    border: 2px solid var(--primary-color);
+    border-radius: 3px;
+    transition: var(--transition);
+
+    &:hover {
+      background: var(--primary-color);
+      transform-origin: left;
+      color: var(--white-text-color);
+    }
+  }
+
+  &__s-bordered {
+    background: none;
+    border: 2px solid var(--secondary-color);
+    border-radius: 3px;
+    transition: var(--transition);
+
+    &:hover {
+      background: var(--secondary-color);
+      transform-origin: left;
+      color: var(--white-text-color);
+    }
+  }
+
+  &__n-rad {
+    border-radius: 0;
   }
 
   &__primary {
