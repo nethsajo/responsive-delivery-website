@@ -32,7 +32,7 @@
     <!-- Main Container -->
     <main class="main-container">
       <!-- Hero Section -->
-      <section class="hero grid container">
+      <section class="hero grid container" id="home">
         <div class="hero__text-container">
           <h1>
             Your favourite restaurants and takeaways, delivered to your door.
@@ -56,9 +56,12 @@
       </section>
 
       <!-- Services Section -->
-      <section class="services grid container">
+      <section class="services grid container" id="services">
+        <h1 class="section-title">Why EasyDelivery?</h1>
         <div class="services__item">
-          <img src="./assets/images/services-foods.svg" alt="Foods" />
+          <div class="image-container">
+            <img src="./assets/images/services-foods.svg" alt="Foods" />
+          </div>
           <div class="text-container">
             <h3>Hundreds of restaurants</h3>
             <p>
@@ -69,9 +72,11 @@
           </div>
         </div>
         <div class="services__item">
-          <img src="./assets/images/services-deliver.svg" alt="Deliver" />
+          <div class="image-container">
+            <img src="./assets/images/services-deliver.svg" alt="Deliver" />
+          </div>
           <div class="text-container">
-            <h3>Deliverd Fast</h3>
+            <h3>Delivered Fast</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos,
               officia sequi aut assumenda doloribus eius! Ut iusto aspernatur
@@ -80,7 +85,9 @@
           </div>
         </div>
         <div class="services__item">
-          <img src="./assets/images/services-fee.svg" alt="Fee" />
+          <div class="image-container">
+            <img src="./assets/images/services-fee.svg" alt="Fee" />
+          </div>
           <div class="text-container">
             <h3>Cheaper Delivery Fee</h3>
             <p>
@@ -88,6 +95,50 @@
               officia sequi aut assumenda doloribus eius!
             </p>
           </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about" id="about">
+        <h1 class="section-title">About Us</h1>
+        <div class="container">
+          <div class="flex about__mv-container">
+            <div class="text-container">
+              <span>—Company</span>
+              <h2>Vision</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Mollitia odio enim perspiciatis voluptas. Aspernatur, vitae
+                aliquam quos, facilis, officiis porro ab autem minima obcaecati
+                est unde tempora rem in atque officia.
+              </p>
+            </div>
+            <div class="image-container">
+              <img
+                src="./assets/images/about-vision.svg"
+                alt="Cover"
+                class="vision"
+              />
+            </div>
+          </div>
+          <div class="flex-rev about__mv-container">
+            <div class="text-container">
+              <span>—Company</span>
+              <h2>Mission</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Mollitia odio enim perspiciatis voluptas. Aspernatur, vitae
+                aliquam quos, facilis, officiis porro ab autem minima obcaecati
+                est unde tempora rem in atque officia.
+              </p>
+            </div>
+            <div class="image-container">
+              <img
+                src="./assets/images/about-vision.svg"
+                alt="Cover"
+                class="vision"
+              />
+            </div>
         </div>
       </section>
     </main>

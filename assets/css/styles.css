@@ -15,7 +15,7 @@
   --transition: all 300ms ease-in-out;
   /*========================= FONT SIZE AND TYPOGRAPHY ==========================*/
   --fs-hero: 48px;
-  --fs-section: 32px;
+  --fs-section: 36px;
   --fs-logo: 24px;
   --fs-normal: 16px;
   --fs-small: 14px;
@@ -74,8 +74,30 @@ ol {
   gap: 20px;
 }
 
+.flex {
+  display: flex;
+}
+
+.flex-rev {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .section-title {
   font-size: var(--fs-section);
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title:after {
+  content: '';
+  display: flex;
+  width: calc(var(--fs-section) + 24px);
+  height: 3px;
+  background: var(--primary-color);
+  margin-top: 15px;
 }
 
 /*================================== PRELOADER ==================================*/
@@ -265,10 +287,11 @@ ol {
   grid-auto-rows: auto;
   justify-content: center;
   align-items: flex-start;
+  margin-bottom: 50px;
 }
 
 .services .section-title {
-  grid-column: 1/3;
+  grid-column: 1/4;
   margin-top: 0;
   margin-bottom: 36px;
 }
@@ -290,8 +313,8 @@ ol {
 .services__item img {
   max-width: 300px;
   max-height: 300px;
-  width: 50%;
-  height: 120px;
+  width: 60%;
+  height: 140px;
   display: block;
   margin: 0 auto;
 }
@@ -310,6 +333,62 @@ ol {
 .services__item .text-container p {
   font-size: var(--fs-normal);
   color: var(--gray-text-color);
+  margin-top: 0;
+}
+
+.about {
+  width: 100%;
+  background: #f2f2f2;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.about__mv-container {
+  justify-content: center;
+  align-items: center;
+}
+
+.about__mv-container:nth-child(1) {
+  margin-bottom: 80px;
+}
+
+.about__mv-container .text-container {
+  flex-basis: 50%;
+  max-width: 50%;
+  padding: 0 12px;
+}
+
+.about__mv-container .text-container span {
+  color: var(--primary-light-color);
+}
+
+.about__mv-container .text-container h2 {
+  font-weight: var(--fw-medium);
+  font-size: 34px;
+  margin: 12px 0;
+  letter-spacing: 1.5px;
+}
+
+.about__mv-container .text-container p {
+  color: var(--default-text-color);
+  font-weight: var(--fw-normal);
+  line-height: 1.8;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.about__mv-container .image-container {
+  flex-basis: 50%;
+  max-width: 50%;
+  padding: 0 12px;
+}
+
+.about__mv-container .image-container .vision {
+  max-width: 430px;
+  max-height: 430px;
+  width: 80%;
+  height: auto;
+  vertical-align: middle;
 }
 
 /*================================== FOOTER STYLES  ==================================*/
