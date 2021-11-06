@@ -1,1 +1,55 @@
-/*================================== FOOTER STYLES  ==================================*/
+.footer {
+  background: var(--secondary-color);
+  width: 100%;
+  padding: 100px 0;
+  height: auto;
+  color: #fff;
+  line-height: 2.3;
+
+  .flex {
+    flex-direction: row;
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+
+  .brand-container {
+    flex-basis: 45%;
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-size: 40px;
+      margin: 0;
+
+      & > span {
+        color: var(--primary-light-color);
+      }
+    }
+
+    p {
+      font-size: var(--fs-small);
+      margin: 0;
+    }
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    flex: 1;
+
+    .items {
+      margin-right: 15px;
+      padding-right: 15px;
+
+      li {
+        font-size: var(--fs-normal);
+        letter-spacing: -0.3px;
+
+        & > h3 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

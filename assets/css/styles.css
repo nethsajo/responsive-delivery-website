@@ -335,6 +335,7 @@ ol {
   margin-top: 0;
 }
 
+/*================================== ABOUT STYLES  ==================================*/
 .about {
   width: 100%;
   background: #f2f2f2;
@@ -386,6 +387,7 @@ ol {
   vertical-align: middle;
 }
 
+/*================================== CONTACT STYLES  ==================================*/
 .contact {
   display: flex;
   flex-direction: column;
@@ -429,5 +431,60 @@ ol {
   background: var(--primary-color);
 }
 
-/*================================== FOOTER STYLES  ==================================*/
+.footer {
+  background: var(--secondary-color);
+  width: 100%;
+  padding: 100px 0;
+  height: auto;
+  color: #fff;
+  line-height: 2.3;
+}
+
+.footer .flex {
+  flex-direction: row;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.footer .brand-container {
+  flex-basis: 45%;
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer .brand-container h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.footer .brand-container h1 > span {
+  color: var(--primary-light-color);
+}
+
+.footer .brand-container p {
+  font-size: var(--fs-small);
+  margin: 0;
+}
+
+.footer .grid {
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  flex: 1;
+}
+
+.footer .grid .items {
+  margin-right: 15px;
+  padding-right: 15px;
+}
+
+.footer .grid .items li {
+  font-size: var(--fs-normal);
+  letter-spacing: -0.3px;
+}
+
+.footer .grid .items li > h3 {
+  font-size: 20px;
+}
+
 /*================================== MEDIA QUERIES  ==================================*/
