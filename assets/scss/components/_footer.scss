@@ -1,10 +1,11 @@
 .footer {
+  position: relative;
   background: var(--secondary-color);
   width: 100%;
-  padding: 100px 0;
-  height: auto;
   color: #fff;
   line-height: 2.3;
+  top: 80px;
+  padding: 50px 0;
 
   .flex {
     flex-direction: row;

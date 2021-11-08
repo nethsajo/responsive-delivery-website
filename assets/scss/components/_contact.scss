@@ -3,8 +3,7 @@
 .contact {
   width: 100%;
   background: #fdfff5;
-  padding-top: 50px;
-  padding-bottom: 75px;
+  padding: 50px 0;
 
   &__content {
     display: flex;
@@ -41,6 +40,7 @@
       color: var(--white-text-color);
       letter-spacing: 1.7px;
       transition: var(--transition);
+      margin-bottom: 50px;
 
       &:hover {
         background: var(--primary-color);

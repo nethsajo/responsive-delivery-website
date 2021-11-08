@@ -396,8 +396,7 @@ ol {
 .contact {
   width: 100%;
   background: #fdfff5;
-  padding-top: 50px;
-  padding-bottom: 75px;
+  padding: 50px 0;
 }
 
 .contact__content {
@@ -436,6 +435,7 @@ ol {
   color: var(--white-text-color);
   letter-spacing: 1.7px;
   transition: var(--transition);
+  margin-bottom: 50px;
 }
 
 .contact__content .btn-email:hover {
@@ -443,12 +443,13 @@ ol {
 }
 
 .footer {
+  position: relative;
   background: var(--secondary-color);
   width: 100%;
-  padding: 100px 0;
-  height: auto;
   color: #fff;
   line-height: 2.3;
+  top: 80px;
+  padding: 50px 0;
 }
 
 .footer .flex {
