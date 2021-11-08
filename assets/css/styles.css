@@ -107,7 +107,7 @@ ol {
   cursor: pointer;
   border: none;
   font-size: var(--fs-small);
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-bold);
   border-radius: 12px;
   padding: 8px 25px;
   line-height: 20px;
@@ -140,7 +140,7 @@ ol {
 }
 
 .btn--n-rad {
-  border-radius: 0;
+  border-radius: 3px;
 }
 
 .btn__primary {
@@ -263,7 +263,7 @@ ol {
 .hero__text-container .form-address input {
   width: 65%;
   font-size: var(--fs-small);
-  padding: 10px 12px;
+  padding: 8px 12px;
   background: none;
   border: 1.78px solid #8f8fa0;
   border-radius: 3px;
@@ -283,16 +283,22 @@ ol {
 
 /*================================== SERVICES STYLES  ==================================*/
 .services {
+  width: 100%;
+  background: #f2f2f2;
+  padding: 50px 0;
+}
+
+.services .grid {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
   justify-content: center;
   align-items: flex-start;
-  margin-bottom: 50px;
 }
 
 .services .section-title {
   grid-column: 1/4;
   margin-bottom: 36px;
+  margin-top: 25px;
 }
 
 .services__order {
@@ -338,7 +344,6 @@ ol {
 /*================================== ABOUT STYLES  ==================================*/
 .about {
   width: 100%;
-  background: #f2f2f2;
   padding: 30px 0;
 }
 
@@ -389,28 +394,34 @@ ol {
 
 /*================================== CONTACT STYLES  ==================================*/
 .contact {
+  width: 100%;
+  background: #fdfff5;
+  padding-top: 50px;
+  padding-bottom: 75px;
+}
+
+.contact__content {
   display: flex;
   flex-direction: column;
-  padding: 30px 0;
-  margin-bottom: 200px;
   justify-content: center;
   align-items: center;
 }
 
-.contact p {
+.contact__content p {
   font-size: 36px;
   font-weight: var(--fw-light);
   line-height: 1.8;
   text-align: center;
   margin-bottom: 40px;
+  letter-spacing: -0.4px;
 }
 
-.contact span {
+.contact__content span {
   font-weight: var(--fw-bold);
   color: var(--primary-color);
 }
 
-.contact .btn-email {
+.contact__content .btn-email {
   width: 200px;
   height: 50px;
   text-transform: uppercase;
@@ -427,7 +438,7 @@ ol {
   transition: var(--transition);
 }
 
-.contact .btn-email:hover {
+.contact__content .btn-email:hover {
   background: var(--primary-color);
 }
 
@@ -485,6 +496,37 @@ ol {
 
 .footer .grid .items li > h3 {
   font-size: 20px;
+}
+
+.footer__social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer__social a i {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: var(--white-text-color);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.footer__social a i:hover {
+  opacity: 0.8;
+}
+
+.footer .developer {
+  margin-top: 30px;
+}
+
+.footer .developer p {
+  font-size: var(--fs-small);
+  color: #e1e1e1;
 }
 
 /*================================== MEDIA QUERIES  ==================================*/

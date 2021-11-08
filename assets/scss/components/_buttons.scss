@@ -3,7 +3,7 @@
   cursor: pointer;
   border: none;
   font-size: var(--fs-small);
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-bold);
   border-radius: 12px;
   padding: 8px 25px;
   line-height: 20px;
@@ -35,7 +35,7 @@
   }
 
   &--n-rad {
-    border-radius: 0;
+    border-radius: 3px;
   }
 
   &__primary {

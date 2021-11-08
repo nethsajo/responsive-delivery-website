@@ -52,4 +52,35 @@
       }
     }
   }
+
+  &__social {
+    display: flex;
+    gap: 15px;
+
+    a i {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background: var(--primary-color);
+      color: var(--white-text-color);
+      transition: var(--transition);
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .developer {
+    margin-top: 30px;
+
+    p {
+      font-size: var(--fs-small);
+      color: #e1e1e1;
+    }
+  }
 }
