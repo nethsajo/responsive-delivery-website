@@ -89,6 +89,7 @@ ol {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 25px 0;
 }
 
 .section-title:after {
@@ -297,8 +298,6 @@ ol {
 
 .services .section-title {
   grid-column: 1/4;
-  margin-bottom: 36px;
-  margin-top: 25px;
 }
 
 .services__order {
@@ -344,7 +343,7 @@ ol {
 /*================================== ABOUT STYLES  ==================================*/
 .about {
   width: 100%;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 .about__mv-container {
@@ -435,7 +434,7 @@ ol {
   color: var(--white-text-color);
   letter-spacing: 1.7px;
   transition: var(--transition);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .contact__content .btn-email:hover {
