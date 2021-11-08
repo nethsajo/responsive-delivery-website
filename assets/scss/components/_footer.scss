@@ -46,9 +46,11 @@
       li {
         font-size: var(--fs-normal);
         letter-spacing: -0.3px;
+        cursor: pointer;
 
         & > h3 {
           font-size: 20px;
+          cursor: auto;
         }
       }
     }

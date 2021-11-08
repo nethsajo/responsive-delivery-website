@@ -67,6 +67,7 @@ ol {
 .container {
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .grid {
@@ -180,7 +181,7 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .header__logo {
@@ -394,7 +395,7 @@ ol {
 /*================================== CONTACT STYLES  ==================================*/
 .contact {
   width: 100%;
-  background: #fdfff5;
+  background: #fff7fb;
   padding: 50px 0;
 }
 
@@ -492,10 +493,12 @@ ol {
 .footer .grid .items li {
   font-size: var(--fs-normal);
   letter-spacing: -0.3px;
+  cursor: pointer;
 }
 
 .footer .grid .items li > h3 {
   font-size: 20px;
+  cursor: auto;
 }
 
 .footer__social {
