@@ -3,10 +3,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
   z-index: 2;
   height: var(--header-height);
+  background: #fff;
   width: 100%;
 
   &__wrapper {
@@ -32,6 +31,8 @@
   }
 
   .nav {
+    height: var(--header-height);
+
     &__menu {
       display: flex;
       flex-direction: row;

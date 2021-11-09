@@ -19,16 +19,19 @@
           <a href="index.html">Easy<span>Delivery</span></a>
         </div>
         <nav class="nav">
-          <ul class="nav__menu" id="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul class="nav__menu" id="menu-container">
+            <li id="nav__item"><a href="#home">Home</a></li>
+            <li id="nav__item"><a href="#services">Services</a></li>
+            <li id="nav__item"><a href="#about">About</a></li>
+            <li id="nav__item"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div class="header__btn-container">
           <button class="btn btn__primary">Partner with Us</button>
           <button class="btn btn__secondary">Sign in or Login</button>
+        </div>
+        <div class="header__icon-menu-container hide-desktop" id="menu-icon">
+          <i class="bx bx-menu-alt-right bx-md icon_menu" id="icon"></i>
         </div>
       </div>
     </header>
@@ -78,6 +81,18 @@
           </div>
           <div class="services__item">
             <div class="image-container">
+              <img src="./assets/images/services-fee.svg" alt="Fee" />
+            </div>
+            <div class="text-container">
+              <h3>Cheaper Delivery Fee</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos,
+                officia sequi aut assumenda doloribus eius!
+              </p>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="image-container">
               <img src="./assets/images/services-deliver.svg" alt="Deliver" />
             </div>
             <div class="text-container">
@@ -86,18 +101,6 @@
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos,
                 officia sequi aut assumenda doloribus eius! Ut iusto aspernatur
                 dolores consectetur.
-              </p>
-            </div>
-          </div>
-          <div class="services__item">
-            <div class="image-container">
-              <img src="./assets/images/services-fee.svg" alt="Fee" />
-            </div>
-            <div class="text-container">
-              <h3>Cheaper Delivery Fee</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos,
-                officia sequi aut assumenda doloribus eius!
               </p>
             </div>
           </div>
@@ -215,5 +218,9 @@
         </div>
       </div>
     </footer>
+    <a href="#" id="scrollTop" class="scrollTop">
+      <i class="bx bx-chevrons-up bx-sm scrollTop__icon"></i>
+    </a>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
   </body>
 </html>
