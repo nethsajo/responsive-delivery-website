@@ -2,6 +2,7 @@ const menuContainer = document.querySelector('#menu-container');
 const menuIcon = document.querySelector('#menu-icon');
 const icon = document.querySelector('#icon');
 const navItem = document.querySelectorAll('#nav__item');
+const preload = document.querySelector('#preload');
 
 window.addEventListener('DOMContentLoaded', () => {
   menuIcon.addEventListener('click', () => {
@@ -63,10 +64,17 @@ const sr = ScrollReveal({
 });
 
 sr.reveal('.hero__text-container', { origin: 'left' });
-sr.reveal('.hero__image-container', { origin: 'right', interval: 200 });
-sr.reveal('.services__item', { origin: 'bottom', delay: 0 });
-sr.reveal('.about__mv-container .text-container', { origin: 'top' });
-sr.reveal('.about__mv-container .image-container', { origin: 'bottom' });
+sr.reveal('.hero__image-container', { origin: 'right' });
+sr.reveal('.services__item', { origin: 'bottom', interval: 200 });
+sr.reveal('.about__mv-container .text-container', {
+  origin: 'left',
+  interval: 300,
+});
+sr.reveal('.about__mv-container .image-container', {
+  origin: 'right',
+  interval: 300,
+  delay: 500,
+});
 sr.reveal('.contact__content .btn-email', { origin: 'bottom' });
 
 window.addEventListener('load', () => {
