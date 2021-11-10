@@ -4,14 +4,23 @@
     padding: 0 60px;
   }
 
+  .header {
+    .nav__menu {
+      li:last-child {
+        margin-left: 0;
+      }
+    }
+  }
+
   .hero {
     height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
+
     &__text-container {
       text-align: left;
       h1 {
-        font-size: 40px;
+        font-size: 36px;
         line-height: 1.3;
       }
 
@@ -49,10 +58,6 @@
   .header {
     position: fixed;
 
-    &__btn-container {
-      display: none;
-    }
-
     .nav {
       &__menu {
         position: absolute;
@@ -61,7 +66,7 @@
         display: flex;
         flex-direction: column;
         background: #fff;
-        width: 40%;
+        width: 65%;
         height: 93vh;
         border-top-right-radius: 25px;
         border-bottom-right-radius: 25px;
@@ -80,8 +85,13 @@
           font-size: var(--fs-normal);
           line-height: 40px;
 
+          .btn {
+            width: 50%;
+          }
+
           &:last-child {
             border-bottom: none;
+            margin-left: 0;
           }
         }
       }
@@ -268,8 +278,12 @@
   }
 
   .header {
-    &__btn-container {
-      display: none;
+    .nav__menu {
+      li {
+        .btn {
+          width: 90%;
+        }
+      }
     }
 
     &__logo {
@@ -283,14 +297,13 @@
   .hero {
     grid-template-columns: 1fr;
     height: calc(100vh - var(--header-height));
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     &__text-container {
-      text-align: center;
       h1 {
         font-size: 28px;
-        line-height: 1.6;
+        line-height: 1.4;
       }
 
       p {
@@ -399,6 +412,9 @@
 
   .hero {
     gap: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+
     &__text-container {
       text-align: center;
 

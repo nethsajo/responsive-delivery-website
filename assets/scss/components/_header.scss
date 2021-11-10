@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 80px;
   }
 
   &__logo {
@@ -45,6 +45,15 @@
 
         &:hover {
           background: rgba(236, 239, 241, 0.4);
+        }
+
+        &:last-child {
+          width: 100%;
+          margin-left: 80px;
+
+          &:hover {
+            background: transparent;
+          }
         }
 
         a {

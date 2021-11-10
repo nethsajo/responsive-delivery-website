@@ -12,6 +12,19 @@
     <title>EasyDelivery - Your essential delivery partner</title>
   </head>
   <body>
+    <!-- Preloader -->
+    <div class="preload" id="preload">
+      <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
     <!-- Header Container -->
     <header class="header">
       <div class="header__wrapper container">
@@ -24,12 +37,12 @@
             <li id="nav__item"><a href="#services">Services</a></li>
             <li id="nav__item"><a href="#about">About</a></li>
             <li id="nav__item"><a href="#contact">Contact</a></li>
+            <li>
+              <button class="btn btn__primary">Partner with Us</button>
+              <button class="btn btn__secondary">Sign in or Login</button>
+            </li>
           </ul>
         </nav>
-        <div class="header__btn-container">
-          <button class="btn btn__primary">Partner with Us</button>
-          <button class="btn btn__secondary">Sign in or Login</button>
-        </div>
         <div class="header__icon-menu-container hide-desktop" id="menu-icon">
           <i class="bx bx-menu-alt-right bx-md icon_menu" id="icon"></i>
         </div>
@@ -221,6 +234,10 @@
     <a href="#" id="scrollTop" class="scrollTop">
       <i class="bx bx-chevrons-up bx-sm scrollTop__icon"></i>
     </a>
+    <script
+      type="text/javascript"
+      src="./assets/js/scrollreveal.min.js"
+    ></script>
     <script type="text/javascript" src="./assets/js/main.js"></script>
   </body>
 </html>

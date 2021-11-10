@@ -23,6 +23,16 @@ window.addEventListener('DOMContentLoaded', () => {
   };
 
   navItem.forEach((item) => item.addEventListener('click', linkPressed));
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth <= 320) {
+      icon.classList.add('bx-sm');
+      icon.classList.remove('bx-md');
+    } else {
+      icon.classList.add('bx-md');
+      icon.classList.remove('bx-sm');
+    }
+  });
 });
 
 window.addEventListener('resize', () => {
@@ -33,14 +43,6 @@ window.addEventListener('resize', () => {
       icon.classList.remove('bx-x');
     }
   }
-
-  if (window.innerWidth <= 320) {
-    icon.classList.remove('bx-md');
-    icon.classList.add('bx-sm');
-  } else {
-    icon.classList.add('bx-md');
-    icon.classList.remove('bx-sm');
-  }
 });
 
 window.addEventListener('scroll', () => {
@@ -50,4 +52,25 @@ window.addEventListener('scroll', () => {
   } else {
     scrollTop.classList.remove('show-scrollTop');
   }
+});
+
+//ScrollReveal
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '20px',
+  duration: 1500,
+  delay: 300,
+});
+
+sr.reveal('.hero__text-container', { origin: 'left' });
+sr.reveal('.hero__image-container', { origin: 'right', interval: 200 });
+sr.reveal('.services__item', { origin: 'bottom', delay: 0 });
+sr.reveal('.about__mv-container .text-container', { origin: 'top' });
+sr.reveal('.about__mv-container .image-container', { origin: 'bottom' });
+sr.reveal('.contact__content .btn-email', { origin: 'bottom' });
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    preload.style.display = 'none';
+  }, 500);
 });
